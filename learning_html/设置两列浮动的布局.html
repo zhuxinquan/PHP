@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>设置两列浮动的布局</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                text-align:center;
+                background-color: gray;
+            }
+            #container{
+                width:996px;
+                margin:1 auto;
+                text-align:left;    
+                color:blue;
+            }
+            #right_content{
+                float:right;
+                width:256px;
+                height:400px;
+                border:1px solid;
+            }
+            #left_main{
+                float:left;
+                width:256px;
+                height:400px;
+                border:3px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="left_main">
+                主导航区块
+            </div>
+            <div id="right_content">
+                内容区块
+            </div>
+        </div>
+    </body>
+</html>
