@@ -15,7 +15,7 @@ class myclass{
 class myclass2{
     function useProperty(){
         echo "输出从父类继承过来的成员属性值".$this->var1."<br>";
-        $this->printHello();
+        $this->printHello();                //由于printHello方法为myclass类的似有方法，继承子类无法访问 
     }
 }
 $subObj1 = new myclass();
