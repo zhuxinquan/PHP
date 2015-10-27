@@ -3,7 +3,7 @@
 class myclass{
     private $var1 = 100;
 
-    private function printHello(){
+    protected function printHello(){
         echo "hello\n";
     }
 
@@ -12,14 +12,14 @@ class myclass{
     }
 }
 
-class myclass2{
+class myclass2 extends myclass{
     function useProperty(){
         echo "输出从父类继承过来的成员属性值".$this->var1."<br>";
         $this->printHello();                //由于printHello方法为myclass类的似有方法，继承子类无法访问 
     }
 }
-$subObj1 = new myclass();
-$subObj1->pu();
+//$subObj1 = new myclass();
+//$subObj1->pu();
 $subObj = new myclass2();
 $subObj->useProperty();
 ?>
